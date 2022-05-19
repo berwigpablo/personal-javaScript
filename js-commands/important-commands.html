@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript test</title>
+</head>
+<body>
+    <!-- <h2 id="demo"></h2> -->
+    <!-- <h2 id="demo-two"></h2> -->
+    <!-- <h2 id="demo-three"></h2> -->
+    <button>Start the machine</button>
+    <p>The machine is stopped</p>
+
+<script>
+    let button = document.querySelector("Button");
+    let p = document.querySelector("p");
+
+    button.addEventListener("click", buttonClick);
+
+    function buttonClick(){
+        if(button.textContent === "Start the machine"){
+            button.textContent = "Stop the machine";
+            p.textContent = "The machine has started!";
+        } else {
+            button.textContent = "Start the machine";
+            p.textContent = "The machine is stopped";
+        }
+    }
+
+</script>
+
+
+
+    <!-- <script>
+        let myNumber = 50;
+        let myEquation = myNumber % 3;
+
+        document.getElementById("demo").innerHTML = myNumber;
+
+        document.getElementById("demo-two").innerHTML = typeof myNumber;
+
+        document.getElementById("demo-three").innerHTML = myEquation;
+
+        console.log(myNumber !== myEquation);
+
+
+    </script> -->
+</body>
+</html>
