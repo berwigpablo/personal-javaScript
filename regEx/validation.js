@@ -6,9 +6,10 @@ const patterns = {
     username: new RegExp(/^[a-z\d]{5,12}$/, 'i'),
     password: new RegExp(/^[\w@-]{8,20}$/),
     slug: new RegExp(/^[a-z\d-]{8,20}$/),
-    email: new RegExp(/[\w]@[a-z]+\.com/)
+    email: new RegExp(/^([\w\.]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/)
 }
 
+//(/^([\w\d\.-]+)$/)
 // validation function
 
 function validate(field,RegExp){
@@ -24,8 +25,6 @@ inputs.forEach((input) => {
         //console.log(e.target.attributes.name.value)
         validate(e.target, patterns[e.target.attributes.name.value])
     })
-
-
 })
 
 //let reg = /^[a-z]{5,12}$/gi;
