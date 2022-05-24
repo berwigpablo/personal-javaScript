@@ -38,7 +38,7 @@ input + p{
     color: red;
     font-weight: bold;
     text-align: center;
-    margin: 0 10px;
+    margin: 0px 10px;
     opacity: 0;
     height:0;
 }
@@ -46,5 +46,5 @@ input + p{
 input.invalid + p{
     opacity: 1;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }

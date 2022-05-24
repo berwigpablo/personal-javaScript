@@ -13,7 +13,7 @@ const patterns = {
 // validation function
 
 function validate(field,RegExp){
-    if (RegExp.test(field.value)){
+    if (RegExp.test(field.value)){  
         field.className = 'valid';
     } else{
         field.className = 'invalid';
