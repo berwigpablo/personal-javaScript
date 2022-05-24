@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <input type="text"> type over here, you bastard;
+        <p></p>
+        <input type="text"> or here, you beautiful bastard;
+        <p></p>
+
+    </form>
+
+
+    <script>
+        //document.addEventListener('keydown', logKey);
+
+        //function logKey(event){
+            //console.log(`You pressed "${event.key}".`);
+          //  console.log(event);
+        //}
+
+     //document.addEventListener('keydown', (event) =>{
+      //  console.log(`You pressed "${event.key}"".`);
+    //})
+
+     //document.addEventListener('keydown', function(event){
+        //console.log(`You pressed "${event.key}".`)
+    //})
+
+    document.addEventListener('keydown', output);
+
+    function output(event) {
+      const para = document.createElement('p');
+      document.body.appendChild(para);
+      para.textContent = `You typed: ${event.key}!`;
+    }
+
+
+    </script>
+    
+</body>
+</html>
