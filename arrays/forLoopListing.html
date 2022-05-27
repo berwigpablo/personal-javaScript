@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <p>I forgot to make an element to insert the array values into:</p>
+
+    <p id="para"></p>
+
+
+</body>
+<script>
+    const testArray = ['Porsche', 'Audi', 'Lamborghini', 'BMW'];
+    const arrayLength = testArray.length;
+
+    let text = '<ul>';
+
+    for (i = 0; i < arrayLength; i++){
+        text+= '<li>' + testArray[i] + '</li>';
+    }
+
+    text += '</ul>';
+
+    document.getElementById('para').innerHTML = text;
+</script>
+</html>
